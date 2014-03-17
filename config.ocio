@@ -26,7 +26,7 @@ roles:
 displays:
   Monitor:
     - !<View> {name: sRGB_Display, colorspace: sRGB}
-    - !<View> {name: Dewhack, colorspace: Whacked}
+
   None:
     - !<View> {name: Raw, colorspace: Raw}
 
