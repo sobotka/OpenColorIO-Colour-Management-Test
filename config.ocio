@@ -24,14 +24,14 @@ roles:
   texture_paint: Raw
 
 displays:
-  Monitor:
-    - !<View> {name: sRGB_Display, colorspace: sRGB}
+  sRGB:
+    - !<View> {name: Default, colorspace: sRGB}
 
   None:
     - !<View> {name: Raw, colorspace: Raw}
 
-active_displays: [Monitor, None]
-active_views: [sRGB, Raw]
+active_displays: [sRGB, None]
+active_views: [Default, Raw]
 
 colorspaces:
   - !<ColorSpace>
@@ -69,7 +69,7 @@ colorspaces:
     to_reference: !<GroupTransform>
         children:
             - !<FileTransform> {src: srgb.spi1d, interpolation: linear}
-            - !<FileTransform> {src: rotated.spimtx, interpolation linear}
+            - !<FileTransform> {src: rotated.spimtx, interpolation: linear}
 
   - !<ColorSpace>
     name: Non-Color
