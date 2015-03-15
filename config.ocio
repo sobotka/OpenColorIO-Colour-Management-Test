@@ -20,7 +20,7 @@ roles:
   default_sequencer: sRGB
 
   # Color spaces for color picking and exture painting (not internally supported yet)
-  color_picking: Raw
+  color_picking: RotatedTesting
   texture_paint: Raw
 
 displays:
@@ -44,6 +44,19 @@ colorspaces:
     isdata: false
     allocation: lg2
     allocationvars: [-15, 6]
+
+  - !<ColorSpace>
+    name: Linear_sRGB
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Scene-linear, high dynamic range with sRGB / 709 primaries. Used for rendering and compositing.
+    isdata: false
+    allocation: lg2
+    allocationvars: [-15, 6]
+    to_reference:
+             !<FileTransform> {src: rotated.spimtx, interpolation:linear }
 
   - !<ColorSpace>
     name: Raw
