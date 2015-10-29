@@ -21,7 +21,7 @@ Now that you are armed with the tool, what should you test for and what can you 
 ### Color Wheel Testing
 Use a tool that features a colour wheel or square selection interface element. Select a colour and paint on Marcie. Does the colour you selected match the colour you see in the sRGB View transform? If not, your appplication isn't colour managed!
 
-### Eye Dropper Tool
+### Eye Dropper Tool Testing
 Using an eye dropper / colour picker tool, select a colour from Marcie. Does the reported colour match the colour that the application is presenting to you? If it doesn't, your application isn't colour managed!
 
 #### Multiple Monitor Testing
