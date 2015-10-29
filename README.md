@@ -18,10 +18,7 @@ Using the application of your choice, set the Marcie image to the included Rotat
 ## Examples of Colour Management Breaking Points
 Now that you are armed with the tool, what should you test for and what can you expect?
 
-### Color Wheel
-Currently the color wheel is not correctly displayed. It is impossible to display sRGB on a display, as the color wheel is not hooked into the color management system and cannot be adapted for the intensity / transfer curve and primaries of the display. This is especially noticeable on wide gamut displays.
-
-#### Color Wheel Testing
+### Color Wheel Testing
 Use a tool that features a colour wheel or square selection interface element. Select a colour and paint on Marcie. Does the colour you selected match the colour you see in the sRGB View transform? If not, your appplication isn't colour managed!
 
 ### Eye Dropper Tool
